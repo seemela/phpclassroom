@@ -2,11 +2,11 @@
   <head>
   </head>
   <body>
-    <table border="100">
+    <table border="1">
       <?php
-        for($i=0;$i<6;$i++){
+        for($i=0;$i<100;$i++){
           echo "<tr>";
-          echo "<td>คอลัมน์</td>";
+          echo "<td>6คอลัมน์</td>";
           echo "</tr>";
         }
       ?>
