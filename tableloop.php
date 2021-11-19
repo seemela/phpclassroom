@@ -6,7 +6,7 @@
       <?php
         for($i=0;$i<100;$i++){
           echo "<tr>";
-          echo "<td>6คอลัมน์</td>";
+          echo "<td>หกคอลัมน์</td>";
           echo "</tr>";
         }
       ?>
