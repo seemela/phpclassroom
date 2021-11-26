@@ -1,8 +1,5 @@
-<head>
-  </head>
-  <body>
-    <table border="1">
 <?php
+   <table border="1">
       for($i=0;$i<100;$i++){
           echo "<tr>";
   $json = file_get_contents('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all');
@@ -12,5 +9,5 @@
     echo "</tr>";
   }
      </table>
-  </body>
+  
 ?>
