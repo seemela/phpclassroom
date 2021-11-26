@@ -6,9 +6,9 @@
     for($i=0;$i<100;$i++){
       echo "<tr>";
       echo "<td>คอลัมน์<td>";
-          echo "<td>คอลัมน์</td>";
   foreach ( $data[0] as $key => $val ){
     echo $key.":".$val."<br>";
+      echo "<td>คอลัมน์</td>";
   }
   echo "</tr>";
   echo "</table>";
