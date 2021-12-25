@@ -1,0 +1,76 @@
+<?php
+  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+  $data = json_decode($json);
+
+  echo "<table border='1'align = 'center'>";
+  echo"<caption>";
+  echo "<h3>";
+  echo "<p>";
+  echo "รายงานสถานการโควิด-19 แยกจังหวัด";
+  echo "</p>";
+  echo "</h3>";
+  echo"</caption>";
+  echo "<tr align = 'center'>";
+  echo "<td bgcolor='#FF6699'>"; 
+  echo "ลำดับ";
+  echo "</td>"; 
+  echo "<td bgcolor='#FF6347'>"; 
+  echo "จังหวัด";
+  echo "</td>";
+  echo "<td bgcolor='#FF7F50'>"; 
+  echo "ผู้ป่วยใหม่";
+  echo "</td>"; 
+  echo "<td bgcolor='#FFFF66'>"; 
+  echo "ผู้ป่วยรวม";
+  echo "</td>"; 
+  echo "<td bgcolor='#00FF7F'>"; 
+  echo "ผู้ป่วยใหม่ในประเทศ";
+  echo "</td>"; 
+  echo "<td bgcolor='#2E8B57'>"; 
+  echo "ผู้ป่วยรวมในประเทศ";
+  echo "</td>"; 
+  echo "<td bgcolor='#99CCFF'>"; 
+  echo "ผู้เสียชีวิตใหม่";
+  echo "</td>"; 
+  echo "<td bgcolor='#4682B4'>"; 
+  echo "ผู้เสียชีวิตรวม";
+  echo "</td>";
+  echo "<td bgcolor='#BA55D3'>"; 
+  echo "วันที่อัพเดท";
+  echo "</td>";  
+  echo "</tr>";
+
+  foreach($data as $key=>$val){
+    echo "<tr align = 'center'>";
+    echo "<tr align = 'center'>";
+    echo "<td bgcolor='#FF9999'>"; 
+    echo $key+1;
+    echo "</td>"; 
+    echo "<td bgcolor='#FA8072'>"; 
+    echo $val->province;
+    echo "</td>";
+    echo "<td bgcolor='#FFA07A'>"; 
+    echo $val->new_case;
+    echo "</td>";
+    echo "<td bgcolor='#FFFF99'>"; 
+    echo $val->total_case;
+    echo "</td>";
+    echo "<td bgcolor='#98FB98'>"; 
+    echo $val->new_case_excludeabroad;
+    echo "</td>";
+    echo "<td bgcolor='#3CB371'>"; 
+    echo $val->total_case_excludeabroad;
+    echo "</td>";
+    echo "<td bgcolor='#CCFFFF'>"; 
+    echo $val->new_death;
+    echo "</td>";
+    echo "<td bgcolor='#6495ED'>"; 
+    echo $val->total_death;
+    echo "</td>"; 
+    echo "<td bgcolor='#DDA0DD'>"; 
+    echo $val->update_date;
+    echo "</td>";
+    echo "</tr>";
+
+  }
+  echo "</table>";
