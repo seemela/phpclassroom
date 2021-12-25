@@ -11,7 +11,7 @@
   echo "</h3>";
   echo"</caption>";
   echo "<tr align = 'center'>";
-  echo "<td bgcolor='#FF6699'>"; 
+  echo "<td bgcolor='#B0B0B2'>"; 
   echo "ลำดับ";
   echo "</td>"; 
   echo "<td bgcolor='#A4C8D5'>"; 
