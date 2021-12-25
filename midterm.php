@@ -43,7 +43,7 @@
   foreach($data as $key=>$val){
     echo "<tr align = 'center'>";
     echo "<tr align = 'center'>";
-    echo "<td bgcolor='#FF9999'>"; 
+    echo "<td bgcolor='#F6F3EE'>"; 
     echo $key+1;
     echo "</td>"; 
     echo "<td bgcolor='#AED9EA'>"; 
@@ -55,7 +55,7 @@
     echo "<td bgcolor='#D8FDF0'>"; 
     echo $val->total_case;
     echo "</td>";
-    echo "<td bgcolor='#EFDFE5'>"; 
+    echo "<td bgcolor='#f8c5a7'>"; 
     echo $val->new_case_excludeabroad;
     echo "</td>";
     echo "<td bgcolor='#c9b5c8'>"; 
