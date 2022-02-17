@@ -1,34 +1,29 @@
 <html>
   <head>
-    <title>Navigation Bar</title>
+    <title>การกำหนดรูปแบบตัวอักษร</title>
     <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0; 
-        overflow: hidden;
-        background-color: #333;
+      @font-face{
+        font-family: myFont;
+        src: url(FC%20Magic%20Italic.woff);
       }
-      li {
-        float: left;
+      @font-face{
+        font-family: myFont2;
+        src: url(FC%20Onigiri%20Outline.woff);
       }
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+      #font1{
+        font-family: myFont;
       }
-      li a:hover {
-        background-color: #111;
+      #font2{
+        font-family: myFont2;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li><a href="#">Coffee</a></li> 
-      <li><a href="#">Tea</a></li> 
-      <li><a href="#">Milk</a></li> 
-    </ul>
+    <div id="font1">
+      <h1>นางสาวธัญวรัตม์ รอดน้อย เลขที่ 21 ห้อง 5/13</h1>
+    </div>
+    <div id="font2">
+      <h1>นางสาวธัญวรัตม์ รอดน้อย เลขที่ 21 ห้อง 5/13</h1>
+    </div>
   </body>
 </html>
